@@ -11,8 +11,8 @@ const handleSignIn=(e)=>{
   const mail=form.email.value;
   const pass=form.password.value;
   signIn(mail,pass)
-  .then(result=>{
-    console.log(result.user)
+  .then(()=>{
+    form.reset();
     setSuccess('Login successfully')
   })
   .catch(error=>{

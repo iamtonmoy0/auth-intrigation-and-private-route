@@ -7,6 +7,8 @@ import Home from './components/Home/Home'
 import Signin from './components/Sign in/Signin'
 import SignUp from './components/SignUp/SignUp'
 import AuthProvider from './providers/AuthProvider'
+import Post from './components/Post/Post'
+import PrivateRoutes from './routes/PrivateRoutes'
 
 
 
@@ -24,6 +26,10 @@ const routes=createBrowserRouter([
     },{
       path:'signup',
       element:<SignUp/>
+    },{
+	path:'post',
+	element:<PrivateRoutes><Post/></PrivateRoutes>
+	
     }
 		]
 	}
