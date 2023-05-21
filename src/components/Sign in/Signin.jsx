@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Signin = () => {
 	return (
@@ -24,6 +25,7 @@ const Signin = () => {
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
         </div>
+        <Link to='/signup'><p>New to website? Register here</p></Link>
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
         </div>
